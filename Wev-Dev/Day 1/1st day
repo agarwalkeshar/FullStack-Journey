@@ -1,0 +1,4 @@
+to add a video to our web page we can use <video> tab
+
+<video src = "//address of the video or file name" controls></video>
+// controls to play the video
