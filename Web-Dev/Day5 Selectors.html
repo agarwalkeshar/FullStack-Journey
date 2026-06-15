@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        /* div{
+            background-color: red;
+        } */
+        .red {
+            background-color: red;
+        }
+        #green{
+            background-color: green;
+        }
+        /* Child Selectors */
+
+        /* Here, if the paragraph tag comes directly comes after div tag then only the child selectors will be applied. The paragraph tag should be the child of the div tag */
+
+        div > p {
+            color: blue;
+            background-color: brown;
+        }
+        /* Descendant Selectors */
+
+        /* Descendant Selectors states that the value or element should be there as defined irrespective of its order.
+        Matlab agar div ke andar paragragh tag hai doesn't matter article ke andar hai ya koi aur tag ke andar hai but agar vo present hai to uss element pe CSS apply hoga*/
+
+        div p{
+            color: blue;
+            background-color: brown;
+        }
+        /* Universal Selectors */
+
+        /* These selectors are applied to all the elements.*/
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selectors */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+        I am a div
+        <p>I am a para inside div</p>
+    </div>
+
+    <!-- Here the child selectors will not be applied as paragaraph tag is apprearing after article tag. It should come right after the div tag  -->
+
+    <!-- <div class="red">
+        I am a div.   
+        <article>
+            <p>I am a para inside div</p>
+        </article> -->
+
+    </div>
+    <div id="green">
+        I am another div
+    </div>
+    <a href="https://www.google.com/">Go to Google</a>
+    <a href="https://www.Wikipedia.com/">Go to Wikipedia</a>
+</body>
+
+</html>
+
+<!-- CSS Selectors allows us to choose specific elements and apply styles to them. -->
