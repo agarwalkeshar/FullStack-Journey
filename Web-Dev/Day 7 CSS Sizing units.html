@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* html is a root element */
+        .html{
+            font-size: 12px;
+        }
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1443px; */
+
+            width: 80vw;
+
+            /*vw = view port width. It will adjust the width according to the screens view port */
+            margin: auto; /* margin: auto is only appllicable when the element is a block level element  */
+            height: 10vh;
+            background-color: aquamarine;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            min-height: 80vh;
+            margin: 23px auto;
+            height: 80vh;
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+        .container  > div{
+            /* font-size: 1em; */
+            
+            /* this will inherit the properties from the container set.
+            Here, the paragraph size becomes 2 times of the container size. 
+            Here the container size is 18px and containers paragraph's size is 2em so it will become 2 times of the containers size i.e 36px. */
+
+            font-size: 2rem;  
+            /* rem  = root element */
+            /* the font size of this becomes 2 times of the root element that is 2 times of html element.total = 12 * 2 = 24px */
+
+            width: 50%;
+            /* Iss paragraph ke parent ki width 50% hojayegi */
+            border: 2px solid red;
+        }
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+        .mycont{
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto;
+            color: black;
+            font-size: 22px;
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+        /* phone mai vh hojaye and computer mai vw hojaye to use vmax */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ea nostrum, id maiores officia ducimus laborum, dicta nobis sint accusamus debitis blanditiis nam magni, voluptate iusto a cum sequi possimus quo? Ad at alias recusandae, nisi, quis odio ratione accusantium consequuntur, tempora rem fuga fugiat eos sit blanditiis deserunt numquam quam iusto rerum culpa. Debitis, eveniet.
+        
+            <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo eum aliquid ducimus in incidunt voluptatem est ipsa, magnam reiciendis ad expedita id consequatur.
+            </div>
+        </div>
+    </div>
+    <div class="mycont">
+        I am another container
+    </div>
+</body>
+
+</html>
