@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            box-shadow: 5px 15px 5px #888888;
+        }
+        .text-shadow{
+            text-shadow: 10px 5px 3px rgb(237, 128, 128);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <p class="text-shadow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id mollitia ratione numquam, nihil repellat dolore, reiciendis iste error voluptatem blanditiis totam quos minus explicabo dignissimos saepe nesciunt! Exercitationem fugiat amet sint dolor animi temporibus?
+    </p>
+</body>
+</html>
+
+<!-- Box-shadow:- box-shadow is a popular CSS property that enables desingers to add shadow effects aorund an element's frame. It can be used to give any element, be it a div, an image or a button, a 3D feet or to emphazine on hover
+
+Syntax: -  
+box-shadow: h-offset(horizontal offset) v-offset(vertical offset) blur spread color inset;
+
+h-offset and v-offset: determines the shadow's vertical and horizontal position
+blur: the larger the value, the blurrer the shadow
+spread: Exands or shrinks the shadow size
+color: defines the shadow color
+inset: makes the shadow innner
+ -->
+<!-- Text-shadow:- h-offset(horizontal offset) v-offset(vertical offset) blur color; -->
+
+ <!-- Outline:- An outline is a line that is drawn aorund elements, outside the borders, to make the element "stand out". It's commomly used for accessibility purposes, like highlighting focused on elements.  -->
+  <!-- Syntax:-  outline: wdith style color
+
+   outline appears outside of the element and border appears inside
+   
+   using "outline-offset" we can adjust the size and spacing of the outline.
+   
+   We cannot change outline width unlike border-->
