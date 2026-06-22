@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        /* global variables/ CSS Variables can not only jold color values but also they can hold background values, strings values, url values and numbers*/
+
+        /* If we want to make some changes then instead of manually making the changes, we can use variables. If changes are make in the global variables they will automatically get changed in the desired location.*/
+
+        :root{
+            --color: rgb(230, 87, 87);
+            --seccolor:rgb(244, 153, 153);
+            /* defpad = deafult padding */
+            --defpad:23px;
+            /* defop = deafult opacity */
+            --defop:0.4;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+        }
+        ul li:first-child{
+            --color: rgb(61, 137, 218);
+            background-color: var(--color,blue);
+            /* blue is a fallback variable. For ex:- if "color" variable is not found or not defined properly then blue as a fallback variable will be used. */
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsam, eligendi eos tempore velit dolore, nemo praesentium numquam maiores beatae itaque molestiae ipsa. Asperiores atque quas aspernatur laboriosam quia aut omnis. Error non pariatur magnam soluta voluptate sit quo obcaecati eaque ut illum, explicabo commodi?</div>
+</body>
+</html>
