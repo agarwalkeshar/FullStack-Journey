@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            /* display: flow-root allows the image to occupy within the cards/boxes if it is exceeding out of the box  */
+            display: flow-root;
+        }
+        img{
+            float:left;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="boat image.jpg" alt="" width="250">
+
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quaerat odio numquam qui eveniet assumenda aliquid, officia cumque mollitia dicta vero voluptatem, debitis obcaecati molestias necessitatibus quae nisi iste exercitationem? Labore hic dignissimos dicta.</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vel officiis natus soluta, quos nemo sint ipsum eius error quod ullam quibusdam voluptates, alias nisi cumque pariatur. Repudiandae illo, natus iste maxime ab incidunt nostrum nobis. Voluptas similique, ex quas qui at nesciunt iusto! Impedit explicabo at repudiandae praesentium quod odit? Repellat, explicabo recusandae eius autem cumque itaque beatae saepe ea ipsa laborum possimus praesentium libero? Iure tenetur sint in iste exercitationem ab praesentium voluptatem quasi totam vitae. Provident vel ut unde placeat! Ex et deleniti eaque itaque voluptate nobis impedit harum, est quod eligendi veniam dolor recusandae omnis nostrum quaerat nesciunt similique consequuntur nulla asperiores odio repellat sed debitis soluta ut? Porro consequatur enim repudiandae quibusdam, laudantium harum consequuntur commodi, numquam mollitia facilis atque officia temporibus repellat similique exercitationem repellendus veniam pariatur sed modi distinctio vero ea fugit libero. Odio eos nulla eum praesentium itaque, fugit provident nihil minus error minima ratione laboriosam assumenda atque laudantium voluptatum unde tempore iusto velit ut dolore aut repellat ab! Molestias exercitationem vitae voluptates blanditiis molestiae quia porro nobis itaque quaerat assumenda. Similique placeat quo sint enim laudantium iste, optio tenetur doloremque unde voluptatibus! Quibusdam, facere provident? Minima quia facere ex molestiae quis eaque impedit fuga necessitatibus quaerat dicta, eum placeat modi consequatur temporibus non alias eveniet labore quas autem. Eum dolore delectus magni architecto doloremque hic ratione maxime minus veniam fuga, laborum maiores ex tempora error. Praesentium fugiat magni laboriosam cupiditate facilis, doloribus inventore voluptatem maiores reprehenderit voluptatum velit beatae eveniet dolores esse et ducimus blanditiis aliquid sint deserunt sit repellendus enim ipsum? Impedit fugit labore atque nesciunt. Iusto assumenda facilis corrupti. Perspiciatis adipisci, repellendus aperiam esse error ipsum provident maxime deserunt quaerat eius nemo aut consequuntur minus dolore ut ducimus pariatur odio repellat nulla temporibus? Velit eum neque dolor cum saepe sint deleniti praesentium blanditiis. Temporibus, deserunt accusantium iusto fugit hic doloribus esse nisi dolorum nulla eius quam pariatur officia minima soluta qui assumenda optio, reprehenderit rem, veritatis quibusdam quos magni consectetur? Vel, error! Ea similique aliquam ullam unde laudantium dolorem itaque, molestiae nemo doloremque eius.</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+
+</html>
