@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Variable</title>
     <style>
-        /* global variables/ CSS Variables can not only jold color values but also they can hold background values, strings values, url values and numbers*/
+        /* global variables/ CSS Variables can not only hold color values, but also they can hold background values, string values, URL values, and numbers*/
 
-        /* If we want to make some changes then instead of manually making the changes, we can use variables. If changes are make in the global variables they will automatically get changed in the desired location.*/
+        /* If we want to make some changes, then instead of manually making the changes, we can use variables. If changes are made in the global variables, they will automatically get changed in the desired location.*/
 
-        :root{
+        : root{
             --color: rgb(230, 87, 87);
             --seccolor:rgb(244, 153, 153);
             /* defpad = deafult padding */
@@ -36,7 +36,7 @@
         ul li:first-child{
             --color: rgb(61, 137, 218);
             background-color: var(--color,blue);
-            /* blue is a fallback variable. For ex:- if "color" variable is not found or not defined properly then blue as a fallback variable will be used. */
+            /* blue is a fallback variable. For ex, if the "color" variable is not found or not defined properly, then, blue as a fallback variable will be used. */
         }
         .container{
             background-color: var(--seccolor);
