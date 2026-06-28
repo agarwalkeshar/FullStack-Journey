@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multicolor Website</title>
+    <!-- We have to build a multi - color website where we have to style the nav bar using CSS variables -->
+    <style>
+        body {
+            background-color: var(--seccolor);
+        }
+
+        :root {
+            --color: rgba(251, 205, 205, 0.871);
+            --seccolor: rgba(251, 143, 143, 0.909);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            height: 65px;
+            position: fixed;
+            width: 1440px;
+            background-color: var(--color);
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            /* margin-left: 0px;
+            margin-top: 0px; */
+            /* background-color: var(--seccolor); */
+            width: 250px;
+            padding: 19px 30px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        li {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>
