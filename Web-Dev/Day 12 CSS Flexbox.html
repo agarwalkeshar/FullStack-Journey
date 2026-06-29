@@ -13,16 +13,16 @@
             /* justify-content arranges or aligns the items in a horizontal manner*/
             /* justify-content: center; */
 
-            /* align-items arranges or aligns the items in a vertical manner.
+            /* align-items arranges or vertically aligns the items.
             It is used when we have only 1 line of data or content.*/
             align-items: center;
 
             /* flex-direction:column; */
             flex-wrap: wrap;
             /* aligns the content on the page according to our need and the space.
-            It is used when we have multiple lines of data or content and it gets wrap. */
+            It is used when we have multiple lines of data or content that need to be wrapped. */
 
-            /* to use align-self we don't need to use align-content if there is only 1 line of content */
+            /* To use align-self, we don't need to use align-content if there is only 1 line of content */
             /* align-content:flex-start; */
 
             /* there is no justify-items in flexbox */
@@ -70,7 +70,7 @@
             <div class="item item1">1</div>
             <div class="item item2">2</div>
             <div class="item item3">3</div>
-            <!-- Since item 4 has order-1 it will appear at the last. The higher the order, the last it gets. If it has the last order them it will appear at the first. -->
+            <!-- Since item 4 has order-1 it will appear at the last. The higher the order, the last it gets. If it has the last order then it will appear at the first. -->
             <div class="item order-1">4</div>
             <div class="item"></div>
             <div class="item"></div>
@@ -83,4 +83,4 @@
 </body>
 </html>
 
-<!-- If the flex-direction is row, then the main-axis will be row and the perpendicular axis will be column and in that case "justify-content" and "align-items" will arrange the items across the main-axis. So, if the flex-direction is row then the main axis will be row and if the flex-direction is column then the main axis will be column. -->
+<!-- If the flex-direction is row, then the main-axis will be row and the perpendicular axis will be column, and in that case "justify-content" and "align-items" will arrange the items across the main-axis. So, if the flex-direction is row, then the main axis will be row, and if the flex-direction is column, then the main axis will be column. -->
