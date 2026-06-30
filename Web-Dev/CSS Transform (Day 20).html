@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tranform</title>
+    <style>
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+
+            /* Rotate() property is used to rotate the element */
+
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0.5turn); */
+            /* transform: rotateX(40deg); */
+            /* transform: rotateY(40deg); */
+            /* transform: rotateZ(40deg); */
+
+            /* Scale() property is used to increase or decrease the size of the element */
+
+            /* transform: scale(2.5); */
+
+            /* Skew() property is used when we want to strech the element or make it appear stretched. Skew can only be performed at X and Y axis and not at Z axis.*/
+
+            /* transform: skew(5deg); */
+
+            /* TranslateX() property is used to shift the element. Like moving it from its place.*/
+            transform: translateX(100%);
+            /* transform: translateY(100%); */
+            
+            /* In order to apllty multiple properties together, we can do it in this manner */
+
+            transform: translateX(100%) skew(40deg) translateY(100%);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- In CSS, Transforms are of 2 types:- 1. 2D Transforms and 3D Transforms
+ 
+2D Transforms:- This property allows the content to be restructured in a way like translate,
+rotate, scale or skew, etc. As it is 2D, therfore the content is transformed into x and y dimensions.
+
+3D Transforms:- As it is 3D, therfore the content is transformed into x, y amd z dimensions.
+-->
