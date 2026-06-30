@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar using Flexbox</title>
+    <style>
+        .nav {
+            display: flex;
+            height: 50px;
+        }
+
+        .website-name {
+            display: flex;
+            gap: 10px;
+        }
+
+        .services {
+            display: flex;
+        }
+
+        .logo {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            font-style: italic;
+            color: yellow;
+            border: 1px solid black;
+            padding: 8px 5px;
+            background-color: black;
+            border-radius: 3px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 280px;
+            height: 23px;
+        }
+
+        .name {
+            display: flex;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            justify-content: end;
+            align-items: center;
+            margin-top: 8px;
+
+        }
+        .sub{
+            font-size: 10px;
+        }
+        .services{
+            display: flex;
+            margin-left: 430px;
+            align-items: center;
+            gap: 40px;
+            font-size: 14px;
+            color: rgb(96, 95, 95);
+        }
+        .section{
+            margin-left: 470px;
+            font-size: 30px;
+            margin-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(68, 68, 68);
+        }
+        .UltraEdit{
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Design the UltraEdit website's navbar using flexbox -->
+
+    <nav class="nav">
+        <div class="website-name">
+            <span class="logo">UE</span>
+            <div>
+                <span class="name">UltraEdit</span>
+                <span class="sub">By Embarcadero</span>
+            </div>
+
+        </div>
+
+        <div class="services">
+            <div>Products</div>
+            <div>Pricing</div>
+            <div>Resources</div>
+            <div>About us</div>
+        </div>
+    </nav>
+    <section>
+        <p class="section">Download <span class="UltraEdit">UltraEdit</span> for Windows</p>
+    </section>
+</body>
+
+</html>
