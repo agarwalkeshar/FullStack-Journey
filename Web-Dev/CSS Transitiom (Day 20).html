@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 40vh;
+        }
+        .box{
+            background-color: aquamarine;
+            width: 5vw;
+            height: 4vh;
+            /* mention the property in which we have to apply transition */
+            /* transition-property: transform; */
+            /* transition-property: all; */
+            
+            /* for hoe much time we haev to applt it */
+            /* transition-duration: 3s; */
+
+            /* the way it should appear */
+            /* transition-timing-function: ease-in-out; */
+
+            /* after how many seconds the transition should start */
+            /* transition-delay: 1s; */
+
+            /* To combine all the properties write all of them together */
+            transition: all 3s ease-in-out 1s background-color;
+
+
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh);
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>
