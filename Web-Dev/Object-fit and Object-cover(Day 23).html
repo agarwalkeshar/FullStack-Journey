@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit and Object-cover(Day 23)</title>
+    <style>
+        .container{
+            width: 480px;
+            height: 500px;
+            border: 2px solid black;
+            /* background-color: azure; */
+
+            /* assigning an imaage as a background image */
+            background-image: url(https://plus.unsplash.com/premium_photo-1711434824963-ca894373272e?q=80&w=715&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-position: center center;
+
+            /* If the background is small, it gets repeated again and again. If it is smaller along the X-axis, it gets repeated vertically and if it is smaller along the Y-axis, it gets repeated horizontally. It order to stop repeating it we use,  */
+
+            /* to not repeat it */
+            /* background-repeat: none;
+
+            /* to repeat along the X-axis*/
+            /* background-repeat: repeat-x;
+
+            /* to repeat along the Y-axis*/
+            /* background-repeat: repeat-y;  */
+
+            /* It is one of the properties for the background image */
+            background-clip:content-box
+        }
+        img{
+            width: 480px;
+            height: 500px;
+            /* "object-fit: cover" covers the image into the defined dimensions so that the image fits perfectlty into it. It will cut the extra part of the image in order to fit it into the desired dimensions.*/
+
+            /* object-fit: cover; */
+
+            /* object-fit: fill; it will cover the whole image into the mentioned dimensions, making it appear distorted. */
+
+            /* object-fit: fill; */
+
+            /* "object-fit: contain" maintains the aspect ratio and original style of the image and prevents it from cutting and aligns it into the mentioned dimensions. */
+
+            object-fit: contain;
+
+            /* object-fit: scale-down reduces the size of the image */
+            /* object-fit: scale-down; */
+
+            /* object-position: left; property when we want to decide which portion of the image we want to display more. */
+
+            object-position: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="girl holding a camera-1.jpg" alt="girl holding a camera"> -->
+    </div>
+    
+</body>
+</html>
