@@ -36,3 +36,28 @@ else{
 // && = Logical AND. Both the comditions should be "true" for the answer to be true.
 // || = Logical OR. Any 1  conditions can be "true" for the answer to be true.
 // ! = Logical NOT. Opposite
+
+if(age!=18){
+    console.log("You can drive");
+}
+else if(age == 0){
+    console.log("Are you kidding");
+}
+else{
+    console.log("You cannot drive")
+}
+
+// Ternary Operator
+let a = 6;
+let b = 8;
+
+let c = a>b ? (a - b) : (a + b);
+
+// the question is asked as if a is greater than b?. If it is true, the first option (a - b) will be executed otherwise (a + b) will be executed. 
+// It is a shorcut form intsead of using if-else.cd ~/Desktop/FullStack-Journey/FullStack-Journey
+
+git add .
+git commit -m "Day X completed"
+
+git pull --rebase origin main
+git push origin main
