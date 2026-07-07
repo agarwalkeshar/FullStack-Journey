@@ -55,9 +55,3 @@ let c = a>b ? (a - b) : (a + b);
 
 // the question is asked as if a is greater than b?. If it is true, the first option (a - b) will be executed otherwise (a + b) will be executed. 
 // It is a shorcut form intsead of using if-else.cd ~/Desktop/FullStack-Journey/FullStack-Journey
-
-git add .
-git commit -m "Day X completed"
-
-git pull --rebase origin main
-git push origin main
