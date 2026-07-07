@@ -1,5 +1,5 @@
 console.log("This is strings tutorial");
-let a = "      Keshar";
+let a = "Keshar";
 console.log(a[0]);
 console.log(a[1]);
 console.log(a[2]);
@@ -67,5 +67,9 @@ console.log(a.trim());
 // charAt() returns the value at particiular index position
 console.log(b.charAt(0))
 
-// indexOf(a)
+// indexOf(a) retuns the index positionof the mentioned character
 console.log(a.indexOf(a))
+
+// startsWith() and endsWith() returns a boolean value true or false if the mentioned character satisfies the condition
+console.log(a.startsWith("K"));
+console.log(b.endsWith("a"));
