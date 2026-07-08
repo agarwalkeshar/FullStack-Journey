@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM - Document Object Model</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a body
+        </div>
+    </div>
+    <script>
+        // DOM - Document Object Model is used to document the entite html as a documentry. We can make changes onto the web page and its elements using DOM
+        document.title = "Keshar is good";
+        console.log(document.title);
+        console.log(document.body);
+        document.body.style.backgroundColor = "pink"
+
+        // BOM - Browser Object Model .It represents the additional objects provided by the browser(host) for working with everything except the document. The functions alert/confirm/prompt are also part of the BOM
+        console.log(window);
+        console.log(window.document);
+        console.log(window.document.body);
+        // window is a global object. It contains DOM, BOM, JavaScript Core.
+    </script>
+</body>
+</html>
