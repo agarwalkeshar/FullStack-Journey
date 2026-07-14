@@ -10,7 +10,7 @@
 <body>
     <script>
         /*
-Create a business name generator by combining list of adjectives and shop name and another word
+Create a business name generator by combining a list of adjectives, a shop name, and another word
 
 Adjectives:
 Crazy 
@@ -30,9 +30,9 @@ Hub
 
         let randomNumber = Math.random();
         let first, second, third;
-        // since, we have 3 categories of words we will break 1 into 3 parts. 0 to 0.33, 0.33 to 0.66 and 0.66 to 1
+        // since we have 3 categories of words, we will break 1 into 3 parts. 0 to 0.33, 0.33 to 0.66, and 0.66 to 1
 
-        // lets generate first word
+        //let's generate first word
         if (randomNumber < 0.33) {
             first = "Crazy";
         }
@@ -43,7 +43,7 @@ Hub
             first = "Fire";
         }
 
-        // lets generate second word
+        //let's generate the second word
         randomNumber = Math.random();
 
         if (randomNumber < 0.33) {
@@ -56,7 +56,7 @@ Hub
             second = "Garments";
         }
 
-        // lets generate third word
+        //let's generate the third word
         randomNumber = Math.random();
 
         if (randomNumber < 0.33) {
@@ -72,5 +72,4 @@ Hub
         console.log(`${first} ${second} ${third}`)
     </script>
 </body>
-
 </html>
